@@ -1,0 +1,238 @@
+* {padding:0px; margin:0px;}
+
+a{
+	text-decoration: none;
+	color:pink;
+}
+
+a:hover{
+	background-color: grey;
+}
+
+body {
+    background-color: white;
+}
+
+h1 {
+	font-family: 'Sacramento', cursive;
+	font-size: 4em;
+}
+
+h2 {
+	font-family: 'Arvo', serif;
+	font-size: 1 en;
+}
+
+
+p{
+	font-family:'Arvo', serif;
+}
+
+.text_image *{
+	display:inline;}
+
+
+/*header styling*/
+
+.header {
+	text-align:center;
+}
+
+.header div{
+	text-align:center;
+	display:inline-block;
+}
+
+.header * {
+	padding-top:10px;
+}
+
+.header img{
+	max-height:250px;
+	margin-bottom:-15%;
+	}
+
+.header h1{
+	font-size:8vmax;
+}
+
+.header_text{
+	text-align:center;
+	background-color:yellow;
+	width:50%;
+}
+
+/*end of header styling*/
+
+
+/*navigation styling*/
+#navigation{
+	margin-top: 50px;
+	margin-bottom:90px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding: 0px;
+}
+
+#navigation ul{
+	background-color: black;
+	font-family: 'Arvo', serif;
+	font-size: 20px;
+	color: white;
+	list-style-type: none;
+	margin:0px;
+	padding-top: 20px;
+	padding-bottom: 19px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#navigation a{
+	background-color:black;
+	padding:20px;
+	
+}
+
+#navigation a:hover{
+	background-color:grey;
+}
+
+#navigation li{
+	display: inline;
+	padding: 0px;
+}
+
+/*end of navigation styling*/
+
+/*about styling*/
+
+#about{
+	position:relative;
+	border-top:thick solid black;
+	padding:5%;
+}
+
+#about h1{
+}
+
+#about p{
+}
+
+#about img{
+	min-width:50px;
+	max-width:300px;
+	float:right;
+}
+
+/*end of about styling*/
+
+
+/*slideshow styling*/
+			
+.cycle-slideshow{
+	width:100%;
+	max-width:700px;
+	display:block;
+	position:relative;
+	margin:20px auto;
+	overflow:hidden;
+}
+
+.caption{
+	width:100%;
+	display:block;
+	position:absolute;
+	z-index:9999;
+	top:0px;
+	padding:25px;
+	box-sizing:border-box;
+}
+
+.caption h3{
+	text-transform:uppercase;
+	color:white;
+	font-size:2em;
+	letter-spacing:.1em;
+	padding-bottom:10px;
+	font-family:'Amatic SC', cursive;
+}
+
+.caption p{
+	color:white; 
+	font-size:.9em; 
+	letter-spacing:.1em;
+	padding-bottom:10px;
+}
+
+.caption p a{
+	text-decoration:none; 
+	color:white; 
+	font-size:.8em; 
+	border:1px solid white;
+	padding:4px 8px;
+}
+
+.caption p a:hover{
+	background-color:white;
+	color:black;
+}
+	
+.slide{
+	width:100%; 
+	display:block; 
+	display:relative;
+}
+
+.cycle-next{
+	width:0px;
+	height:0px;
+	position:absolute;
+	bottom:120px; right:20px;
+	display:block;
+	border-left:15px solid rgba(255,255,255,0.5);
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	z-index:99999;
+}
+
+.cycle-next:hover{
+	border-left:15px solid rgba(255,255,255,1);
+}
+
+.cycle-prev{
+	width:0px;
+	height:0px;
+	position:absolute;
+	bottom:60px; right:20px;
+	display:block;
+	border-right:15px solid rgba(255,255,255,0.5);
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	z-index:99999;
+}
+
+.cycle-prev:hover{
+	border-right:15px solid rgba(255,255,255,1);
+}
+
+.cycle-pager{
+display:block;
+text-align:center;
+font-size:2em;
+color:grey;
+}
+
+.cycle-pager-active{
+	color:pink;
+}
+
+/*end of slideshow styling*/
+
+
+/*oops page styling*/
+
+#oops{
+	padding-left:400px;
+	padding-top: 100px;
+}
+/*end of oops page styling*/

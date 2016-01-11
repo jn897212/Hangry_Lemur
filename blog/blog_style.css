@@ -1,0 +1,116 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{background-color:white;}
+
+h1 {
+	font-family: 'Sacramento', cursive;
+	font-size: 4em;
+}
+
+p{font-family:'Arvo', serif;}
+
+/*navigation styling*/
+#navigation{
+	background-color:black;
+	padding:20px;
+}
+
+#navigation ul{
+	font-family: 'Arvo', serif;
+	font-size: 20px;
+	list-style-type: none;
+}
+
+#navigation a{
+	text-decoration:none;
+	color: pink;
+	padding:10px;
+}
+
+#navigation a:hover{
+	background-color:grey;
+}
+
+#navigation li{
+	display: inline;
+}
+
+/*end of navigation styling*/
+
+
+/*content styling*/
+.content{
+	position:relative;
+	width:70%;
+	height:1000px;
+	margin:50px auto;
+}
+
+.content h4{
+	position:absolute;
+	right:0px;
+	font-family: 'Arvo', serif;
+	color:rgba(174,174,174,0.5);
+}
+
+.img_with_caption{
+	position:absolute;
+	margin-top:5%;
+	width:100%;
+}
+
+.img_with_caption img{
+	height:auto;
+	width:100%;
+	z-index:9999;
+}
+
+.writing{
+	position:absolute;
+	width: 100%;
+	padding-top:55%;
+	z-index:999;
+}
+/*end of content styling*/
+
+/*caption styling*/
+
+.caption{
+	width:100%;
+	display:block;
+	position:absolute;
+	z-index:9999;
+	top:0px;
+	padding:25px;
+	box-sizing:border-box;
+}
+
+.caption h3{
+	text-transform:uppercase;
+	color:white;
+	font-size:2em;
+	letter-spacing:.1em;
+	padding-bottom:10px;
+	font-family:'Amatic SC', cursive;
+}
+
+.caption p{
+	color:white; 
+	font-size:.9em; 
+	letter-spacing:.1em;
+	top:70px;
+}
+
+/*end of caption styling*/
+
+
+/*oops page styling*/
+
+#oops{
+	padding-left:400px;
+	padding-top: 100px;
+}
+/*end of oops page styling*/
