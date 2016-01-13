@@ -10,32 +10,43 @@ h1 {
 	font-size: 4em;
 }
 
-p{font-family:'Arvo', serif;}
-
 /*navigation styling*/
-#navigation{
-	background-color:black;
-	padding:20px;
+.navigation{
+	margin-top: 0px;
+	margin-bottom:50px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding: 0px;
 }
 
-#navigation ul{
+.navigation ul{
+	background-color: black;
 	font-family: 'Arvo', serif;
 	font-size: 20px;
+	color: white;
 	list-style-type: none;
+	margin:0px;
+	padding-top: 20px;
+	padding-bottom: 19px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
-#navigation a{
+.navigation a{
 	text-decoration:none;
-	color: pink;
-	padding:10px;
+	color:pink;
+	max-height:100%;
+	padding:20px;
+	
 }
 
-#navigation a:hover{
+.navigation a:hover{
 	background-color:grey;
 }
 
-#navigation li{
+.navigation li{
 	display: inline;
+	padding: 0px;
 }
 
 /*end of navigation styling*/
@@ -45,20 +56,24 @@ p{font-family:'Arvo', serif;}
 .content{
 	position:relative;
 	width:70%;
-	height:1000px;
 	margin:50px auto;
 }
 
 .content h4{
-	position:absolute;
-	right:0px;
+	text-align:right;
 	font-family: 'Arvo', serif;
+	padding-bottom:20px;
 	color:rgba(174,174,174,0.5);
 }
 
+.content p{
+	padding-top:20px;
+}
+
+/*img with caption styling*/
+
 .img_with_caption{
-	position:absolute;
-	margin-top:5%;
+	position:relative;
 	width:100%;
 }
 
@@ -69,48 +84,39 @@ p{font-family:'Arvo', serif;}
 }
 
 .writing{
-	position:absolute;
 	width: 100%;
-	padding-top:55%;
-	z-index:999;
+	font-family:'Arvo', serif;
 }
-/*end of content styling*/
 
 /*caption styling*/
 
 .caption{
+	color:white;
+	padding:2%;
+	position:absolute;
+	top:0px;
 	width:100%;
 	display:block;
-	position:absolute;
-	z-index:9999;
-	top:0px;
-	padding:25px;
 	box-sizing:border-box;
 }
 
 .caption h3{
 	text-transform:uppercase;
-	color:white;
 	font-size:2em;
 	letter-spacing:.1em;
-	padding-bottom:10px;
+	padding-bottom:0px;
 	font-family:'Amatic SC', cursive;
 }
 
 .caption p{
-	color:white; 
+	font-family:'Arvo', serif;
 	font-size:.9em; 
 	letter-spacing:.1em;
-	top:70px;
+	top:0px;
 }
 
 /*end of caption styling*/
 
+/*end of img with caption styling*/
 
-/*oops page styling*/
-
-#oops{
-	padding-left:400px;
-	padding-top: 100px;
-}
-/*end of oops page styling*/
+/*end of content styling*/
