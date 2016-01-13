@@ -8,6 +8,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		function nostyle(){
+			document.getElementById('this').style.cssText='text-decoration:none;';
+		}
+		
+		function underline(){
+			document.getElementById('this').style.cssText='text-decoration:underline;';
+		}
+	</script>
 </head>
 
 <body>
@@ -18,13 +27,13 @@
 			<h1>Hangry Lemur</h1>
 			<h2>Everyone gets a little hangry sometimes.</h2>
 		</div>
-		<div><img src="logo_scaled.png"/></div>
+		<!--<div><img src="logo_scaled.png"/></div>-->
 	</div>
 	<!--end header-->
 	
 	
 	<!--navigation bar-->
-	<div id="navigation">
+	<div class="navigation">
 		<ul>
 			<li><a href="#">Home</a></li>
 			<li><a href="oops.html">Blog</a></li>
@@ -100,13 +109,15 @@
 		
 		<!--end responsive image slider with full control-->
 	
-	<div id="about" name="about">
+	<div class="about" name="about">
 			<div class="text_image">
 				<h1>About</h1>
 				<img src="images/about.png"/>
 			</div>
 			<p>Thank you for visiting Hangry Lemur!  This blog's main purpose is
-			to give me a focus while I learn about web development.  I hope my new found skills make you laugh and help you celebrate moments one would not
+			to give me a focus while I learn about web development.  Source code for Hangry Lemur can be found on 
+			<a onmouseenter="nostyle()" onmouseleave="underline()" id="this" href="https://github.com/jn897212/Hangry_Lemur.git">GitHub</a>.
+			I hope my new found skills make you laugh and help you celebrate moments one would not
 			find on a Pinterest board.  Here are some odds and ends from my life: the good, the bad, and the hilarious.</p>
 	</div>
 </body>

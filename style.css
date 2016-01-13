@@ -1,14 +1,5 @@
 * {padding:0px; margin:0px;}
 
-a{
-	text-decoration: none;
-	color:pink;
-}
-
-a:hover{
-	background-color: grey;
-}
-
 body {
     background-color: white;
 }
@@ -47,13 +38,14 @@ p{
 	padding-top:10px;
 }
 
-.header img{
+/**.header img{
 	max-height:250px;
 	margin-bottom:-15%;
-	}
+	}**/
 
 .header h1{
-	font-size:8vmax;
+	/**font-size:8vmax;**/
+	font-size:5em;
 }
 
 .header_text{
@@ -66,7 +58,7 @@ p{
 
 
 /*navigation styling*/
-#navigation{
+.navigation{
 	margin-top: 50px;
 	margin-bottom:90px;
 	margin-right: 0px;
@@ -74,7 +66,7 @@ p{
 	padding: 0px;
 }
 
-#navigation ul{
+.navigation ul{
 	background-color: black;
 	font-family: 'Arvo', serif;
 	font-size: 20px;
@@ -87,44 +79,24 @@ p{
 	padding-right: 0px;
 }
 
-#navigation a{
-	background-color:black;
+.navigation a{
+	text-decoration:none;
+	color:pink;
+	max-height:100%;
 	padding:20px;
 	
 }
 
-#navigation a:hover{
+.navigation a:hover{
 	background-color:grey;
 }
 
-#navigation li{
+.navigation li{
 	display: inline;
 	padding: 0px;
 }
 
 /*end of navigation styling*/
-
-/*about styling*/
-
-#about{
-	position:relative;
-	border-top:thick solid black;
-	padding:5%;
-}
-
-#about h1{
-}
-
-#about p{
-}
-
-#about img{
-	min-width:50px;
-	max-width:300px;
-	float:right;
-}
-
-/*end of about styling*/
 
 
 /*slideshow styling*/
@@ -228,11 +200,31 @@ color:grey;
 
 /*end of slideshow styling*/
 
+/*about styling*/
+
+.about{
+	position:relative;
+	border-top:thick solid black;
+	padding:5%;
+}
+
+.about a{
+	text-decoration:underline;
+	color:black;
+}
+
+.about img{
+	min-width:50px;
+	max-width:300px;
+	float:right;
+}
+
+/*end of about styling*/
 
 /*oops page styling*/
 
 #oops{
-	padding-left:400px;
-	padding-top: 100px;
+	text-align:center;
+	padding-top: 100px auto;
 }
 /*end of oops page styling*/
