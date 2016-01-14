@@ -219,6 +219,10 @@ color:grey;
 	float:right;
 }
 
+.about p {
+	max-width:850px;
+}
+
 /*end of about styling*/
 
 /*oops page styling*/
