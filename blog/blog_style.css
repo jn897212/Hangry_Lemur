@@ -72,6 +72,14 @@ h1 {
 
 /*img with caption styling*/
 
+@media screen (max-width: 575px){
+	
+	.caption {
+		background-color:yellow;
+	}
+	
+}
+
 .img_with_caption{
 	position:relative;
 	width:100%;
@@ -83,11 +91,6 @@ h1 {
 	z-index:9999;
 }
 
-.writing{
-	width: 100%;
-	font-family:'Arvo', serif;
-}
-
 /*caption styling*/
 
 .caption{
@@ -96,7 +99,6 @@ h1 {
 	position:absolute;
 	top:0px;
 	width:100%;
-	display:block;
 	box-sizing:border-box;
 }
 
@@ -106,6 +108,7 @@ h1 {
 	letter-spacing:.1em;
 	padding-bottom:0px;
 	font-family:'Amatic SC', cursive;
+	display:block;
 }
 
 .caption p{
@@ -113,10 +116,27 @@ h1 {
 	font-size:.9em; 
 	letter-spacing:.1em;
 	top:0px;
+	display:block;
 }
+
+@media screen and (max-width: 400px){
+        .caption p{
+		display:none;
+		}
+		
+		/*p{
+			font-size: 1em;
+		}*/
+    }
 
 /*end of caption styling*/
 
 /*end of img with caption styling*/
+
+.writing{
+	width: 100%;
+	font-family:'Arvo', serif;
+	font-size:6;
+}
 
 /*end of content styling*/

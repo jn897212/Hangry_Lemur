@@ -17,11 +17,8 @@ h2 {
 
 p{
 	font-family:'Arvo', serif;
+	font-size:16px;
 }
-
-.text_image *{
-	display:inline;}
-
 
 /*header styling*/
 
@@ -46,12 +43,6 @@ p{
 .header h1{
 	/**font-size:8vmax;**/
 	font-size:5em;
-}
-
-.header_text{
-	text-align:center;
-	background-color:yellow;
-	width:50%;
 }
 
 /*end of header styling*/
@@ -203,26 +194,87 @@ color:grey;
 /*about styling*/
 
 .about{
-	position:relative;
-	border-top:thick solid black;
-	padding:5%;
+		padding:5%;
+		border-top: solid 5px black;
+		text-align:center;
 }
 
-.about a{
-	text-decoration:underline;
-	color:black;
+.about h1{
+	width:100%;
+	margin:0px auto;
 }
 
 .about img{
-	min-width:50px;
-	max-width:300px;
-	float:right;
+	width:200px;
+	height:200px;
+	margin:0px auto;
+	padding-bottom:5%;
 }
 
-.about p {
-	max-width:850px;
+.about p{
+	text-align:left;
+	width:100%;
 }
 
+.aboutbox{
+	display:flex;
+	flex-wrap:wrap;
+	width:100%;
+}
+
+@media screen and (min-width:460px){
+	.about h1{
+		order:0;
+	}
+	
+	.about img{
+		width:250px;
+		height:250px;
+		order:1;
+	}
+	
+	.about p{
+		order:2;
+	}
+}
+
+@media screen and (min-width:620px){
+	.about h1{
+		order:0;
+		text-align:left;
+	}
+	
+	.about img{
+		order:2;
+		width:250px;
+		height:250px;
+		margin-top:-10%;
+	}
+	
+	.about p{
+		order:1;
+		width:50%;
+	}	
+}
+
+@media screen and (min-width: 900px){
+	
+	.about{
+		padding:5% 15%;
+		margin:0px auto;
+	}	
+}
+
+@media screen and (min-width:1300px){	
+	.about p{
+		width:70%;
+	}
+}
+
+#GitHub{
+	color:black;
+}
+		
 /*end of about styling*/
 
 /*oops page styling*/
