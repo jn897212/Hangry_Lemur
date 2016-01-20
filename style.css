@@ -101,6 +101,19 @@ p{
 	overflow:hidden;
 }
 
+/*slide styling*/
+.slide img{
+	width:100%;
+}
+
+.slide{
+	width:100%; 
+	display:block; 
+	display:relative;
+}
+
+/*caption styling*/
+
 .caption{
 	width:100%;
 	display:block;
@@ -139,12 +152,27 @@ p{
 	background-color:white;
 	color:black;
 }
-	
-.slide{
-	width:100%; 
-	display:block; 
-	display:relative;
+
+@media screen and (max-width:450px){
+
+	.caption p {
+		display:none;
+	}
+	.body_positivity{
+		width:100%;
+		position:relative;
+	}
+	.body_positivity h3{
+		width:10%;
+		position:absolute;
+		top:40px;
+		right:100px;
+	}
 }
+
+/*end caption styling*/
+
+/*end slide styling*/
 
 .cycle-next{
 	width:0px;
@@ -183,6 +211,19 @@ display:block;
 text-align:center;
 font-size:2em;
 color:grey;
+}
+
+.cycle-pager span{
+	padding:5px;
+	font-size:25px;
+}
+
+@media screen and (max-width:500px){
+
+	.cycle-pager span{
+		font-size:50px;
+		padding:10px;
+	}
 }
 
 .cycle-pager-active{
