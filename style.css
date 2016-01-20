@@ -68,6 +68,13 @@ p{
 	padding-bottom: 19px;
 	padding-left: 0px;
 	padding-right: 0px;
+	text-align:center;
+}
+
+@media screen and (min-width:620px){
+	.navigation ul{
+		text-align:left;
+	}
 }
 
 .navigation a{
